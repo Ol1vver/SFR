@@ -42,7 +42,7 @@ internal static class Database
     [HarmonyPatch(typeof(WeaponDatabase), nameof(WeaponDatabase.Load))]
     private static void LoadWeapons()
     {
-        WeaponDatabase.m_weapons = new WeaponItem[106];
+        WeaponDatabase.m_weapons = new WeaponItem[107];
 
         _weapons ??= new List<WeaponItem>
         {
@@ -50,6 +50,7 @@ internal static class Database
             new(WeaponItemType.Melee, new Brick()), // 71
             new(WeaponItemType.Melee, new Broom()), // 72
             new(WeaponItemType.Melee, new CannonBall()), // 73
+            new(WeaponItemType.Melee, new Boot()), // 106
 
             // Melee
             new(WeaponItemType.Melee, new Blade()), // 74
