@@ -1558,20 +1558,6 @@ Tile(CrabCan00_D)
 		collisionPoints = (-3, -2), (3, -2), (3, 2), (-3, 2);
 	}
 }
-Tile(Boot00)
-{
-	life = 25;
-	gibpressure.total = 40 kg;
-	gibpressure.spike = 160 kg;
-	absorbProjectile = false;
-	material.destroySound = DestroySmall;
-	material.blockExplosions = false;
-	fixture()
-	{
-		collisionGroup = dynamics_g2;
-		collisionPoints = (-1.5, -2.5), (1.5, -2.5), (0.5, 2.5), (-1.5, 2.5);
-	}
-}
 Tile(Gascan00)
 {
 	objectStrength = 0.0;
